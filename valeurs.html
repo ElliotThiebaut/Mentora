@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Mentora</title>
+</head>
+<body>
+    <header class="header-valeurs">
+        <nav class="navbar container">
+            <!-- Logo -->
+            <img src="img/mentora.png" alt="Logo" class="logo">
+            <!-- Links -->
+            <ul class="navbar-links">
+                <li class="navbar-items">
+                    <a href="#">Les formations</a>
+                </li>
+                <li class="navbar-items">
+                    <a href="#">Nos valeurs</a>
+                </li>
+                <li class="navbar-items navbar-profil">
+                    <img src="img/photo-profil.jpg" alt="photo-profil" class="photo-profil">
+                </li>
+            </ul>
+        </nav>
+        <!-- header  -->
+        <div class="header">
+            <!-- Contenu header  -->
+            <div class="header-content">
+                <h1>Nos valeurs</h1>
+                <p>Nous nous engageons à vous offrir le meilleur des suivis avec des mentors de qualité qui vous accompagneront tout au long de vos formations</p>
+                <a href="#">Découvrir</a>
+            </div>
+            <!-- Illustration header -->
+            <div class="header-illustration">
+                <img src="img/illustration-valeurs.png" alt="valeurs-illustration">
+            </div>
+        </div>  
+    </header>
+    <main>
+        <!-- Section valeurs-->
+        <section class="valeurs">
+            <!-- Titre section -->
+            <h2>Mentora et ses valeurs</h2>
+
+            <!-- Groupe de cards des valeurs -->
+            <div uk-slider="finite: true" class="uk-margin-xlarge-left">
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            
+                    <ul class="uk-slider-items uk-child-width-1-4@s uk-grid slider">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="img/valeur-humain.png" alt="valeurs humains">
+                                </div>
+                                <div class="uk-card-body card">
+                                    <h3 class="uk-card-title">L'humain</h3>
+                                    <p>L'humain au centre de la réflexion de Mentora.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="img/valeur-exp.png" alt="valeurs experience">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">L'expérience</h3>
+                                    <p>Des mentors experts dans leur domaine.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="img/valeur-perso.png" alt="valeurs personnalisation">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">La personnalisation</h3>
+                                    <p>Un suivi personnalisé pour chacun de vous en fonction de vos profils.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="img/valeur-comp.png" alt="valeurs competence">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">La compétence</h3>
+                                    <p>Des formations de qualité et facile d’accès.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="img/valeur-dispo.png" alt="valeurs disponibilite">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">La disponibilité</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin dotnav-valeurs uk-margin-medium-top"></ul>
+            
+            </div>
+            </div>
+            <!-- CTA -->
+            <a class="container uk-margin-xlarge-top cta-valeurs">Rejoignez l'aventure !</a>
+        </section>
+    </main>
+    <footer class="footer-bkg">
+        <div class="container footer">
+            <!-- Partie gauche -->
+            <div class="footer-left">
+                <!-- Logo version blanche -->
+                <img src="img/mentora-white.png" alt="logo-white">
+                <!-- Links -->
+                <div class="footer-left-links">
+                    <a href="#">Qui sommes-nous ?</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <!-- Partie milieu -->
+            <div class="footer-middle">
+                <a href="#">Devenez mentor</a>
+            </div>
+            <!-- Partie droite -->
+            <div class="footer-right">
+                <p>Retrouvez-nous sur les réseaux sociaux</p>
+                <!-- Links réseaux -->
+                <div class="footer-right-icones">
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.1/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@import 'utilities';
+@import 'reset';
+
+.container {
+	margin: 0 auto;
+	max-width: 85vw;
+}
+
+header {
+	height: 100vh;
+	max-width: 100%;
+}
+
+.logo {
+	width: 12%;
+	min-width: 130px;
+}
+
+.navbar {
+	@include flex(space-between, center);
+	height: 10%;
+
+	&-links {
+		@include flex(space-between,center);
+		width: 30%;
+		min-width: 370px;
+	}
+	&-items {
+		@include font($poppins, null, null, 400);
+	}
+	&-profil {
+		height: 45px;
+		width: 45px;
+
+		img {
+			border-radius: 50%;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.header {
+	height: 90%;
+	@include flex(space-between, center);
+
+	&-content {
+		width: 33%;
+		height: 37%;
+		margin-left: 7.5vw;
+		@include flex(space-between, null, column);
+
+		h1 {
+			@include font($poppins, $primaryColor, 70px, 700);
+		}
+
+		p {
+			@include font($roboto, null, 19px, 300);
+		}
+
+		a {
+			width: 50%;
+			background-color: $secondaryColor;
+			text-align: center;
+			padding: 3% 0;
+			@include font($poppins, white, 20px, 400);
+			margin-top: 24px;
+		}
+	}
+
+	&-illustration {
+		width: 40%;
+		margin-right: 3vw;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.valeurs {
+	height: 110vh;
+	background-color: $greyBkg;
+	@include flex(null, center, column);
+	@include font($roboto, null, null, 300);
+	text-align: center;
+
+	h2 {
+		align-self: flex-start;
+		margin-left: 7.5vw;
+		margin-top: 8vh;
+
+		@include font($poppins, $primaryColor, 50px, 700);
+	}
+
+	.slider {
+		margin-top: 7vh;
+	}
+}
+
+.cta-valeurs {
+	@include font($poppins, $primaryColor, 70px, 800);
+
+	&:hover {
+		color: $primaryColor;
+		text-decoration: none;
+	}
+}
+
+.uk-card-title {
+	color: black !important;
+	@include font($poppins, null, 25px, 600);
+}
+
+.uk-card-media-top {
+	padding-top: 40px;
+}
+.uk-card-default {
+	height: 300px;
+	max-width: 350px;
+}
+
+.footer-bkg {
+	height: 30vh;
+	background-color: $primaryColor;
+}
+
+.footer {
+	@include flex(space-between, space-around);
+	@include font($poppins);
+	height: 100%;
+
+	a {
+		color: white;
+	}
+
+	&-left {
+		@include flex(center, null, column);
+		&-links {
+			@include flex(null, null, column);
+			margin-top: 15px;
+		}
+	}
+	&-middle {
+		margin-top: 50px;
+		@include flex(null, center);
+	}
+	&-right {
+		p {
+			color: white;
+		}
+		a {
+			color: $primaryColor;
+			margin-top: 15px;
+			&:hover {
+				color: black;
+			}
+		}
+		margin-top: 75px;
+		@include flex(center, null, column);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.header {
+		flex-direction: column;
+		justify-content: space-around;
+		&-content {
+			width: 100%;
+			text-align: left;
+			margin-top: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.header-content {
+		h1 {
+			font-size: 40px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 1282px) {
+	.header-content {
+		h1 {
+			font-size: 50px;
+		}
+	}
+}
