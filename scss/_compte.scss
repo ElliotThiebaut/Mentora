@@ -1,0 +1,125 @@
+.header-compte {
+	height: 50vh;
+	max-width: 100%;
+
+	&-profile {
+		background-color: #f6f6f6;
+		height: 20vh;
+		width: 45vw;
+		margin-left: 11vw;
+		margin-top: 10vh;
+		@include flex(space-between, center);
+
+		&-content {
+			@include flex(space-between, center);
+
+			&-photo {
+				width: 10vw;
+				img {
+					border-radius: 50%;
+				}
+				position: relative;
+				left: -70px;
+			}
+
+			h2 {
+				@include font($poppins, null, 30px, 600);
+			}
+			p {
+				@include font($roboto, null, 17px, 300);
+			}
+		}
+		a {
+			margin-right: 2vw;
+			color: black;
+		}
+	}
+}
+
+.main-compte {
+	height: 100vh;
+	background-color: $greyBkg;
+	padding-top: 5vh;
+}
+
+.formations {
+	@include flex(space-between, null, column);
+
+	&-nav {
+		@include flex(space-between, null);
+
+		h2 {
+			@include font($poppins, $primaryColor, 40px, 700);
+		}
+		ul {
+			width: 35%;
+			@include flex(space-between);
+			@include font($roboto, black, null, 300);
+
+			.active {
+				font-weight: 700;
+			}
+		}
+	}
+	&-cours {
+		margin-top: 3vh;
+		padding: 5px;
+		padding-left: 25px;
+		background-color: white;
+		@include flex(space-between);
+		&-content {
+			width: 30%;
+			@include flex(space-between);
+
+			.img-cours {
+				@include flex(center, center);
+			}
+			h3 {
+				@include flex(center, center);
+				@include font($poppins, black, 25px, 700);
+			}
+			.img-progress {
+				@include flex(center, center);
+				img {
+					height: 80%;
+				}
+			}
+		}
+		a {
+			margin: auto 0;
+			margin-right: 2%;
+			background-color: $secondaryColor;
+			padding: 15px 50px;
+			@include font($poppins, white);
+		}
+	}
+}
+
+.mentor {
+	height: 60%;
+}
+
+.mentors {
+	height: 100%;
+	@include flex();
+	&-card {
+		padding: 20px;
+		margin-top: 4%;
+		margin-right: 2%;
+		background-color: white;
+		height: 60%;
+		width: 25%;
+		@include flex(space-between, null, column);
+		&-content {
+			h4 {
+				@include font($poppins, black, 25px, 700);
+			}
+			p {
+				@include font($roboto, black, 20px, 400);
+			}
+		}
+		.mentor-formations {
+			@include font($poppins, $primaryColor, null, 300);
+		}
+	}
+}

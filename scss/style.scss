@@ -1,5 +1,6 @@
 @import 'utilities';
 @import 'reset';
+@import 'compte';
 
 .container {
 	margin: 0 auto;
@@ -18,7 +19,7 @@ header {
 
 .navbar {
 	@include flex(space-between, center);
-	height: 10%;
+	height: 10vh;
 
 	&-links {
 		@include flex(space-between,center);
