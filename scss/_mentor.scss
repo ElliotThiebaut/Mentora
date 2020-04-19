@@ -1,0 +1,30 @@
+.main-mentor {
+	height: 70vh;
+	background-color: $greyBkg;
+	padding-top: 5vh;
+}
+
+.mentors {
+	height: 100%;
+	@include flex();
+	&-card-competence {
+		padding: 20px;
+		margin-top: 4%;
+		margin-right: 2%;
+		background-color: white;
+		height: 100%;
+		width: 25%;
+		@include flex(space-between, null, column);
+		&-content {
+			h4 {
+				@include font($poppins, black, 25px, 700);
+			}
+			p {
+				@include font($roboto, black, 20px, 400);
+			}
+		}
+		.mentor-formations {
+			@include font($poppins, $primaryColor, null, 300);
+		}
+	}
+}
